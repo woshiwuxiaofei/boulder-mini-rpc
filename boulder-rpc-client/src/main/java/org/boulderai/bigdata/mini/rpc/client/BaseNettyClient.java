@@ -18,7 +18,8 @@ import org.boulderai.bigdata.mini.rpc.common.codec.RpcEncoder;
 import org.boulderai.bigdata.mini.rpc.common.constants.RpcConstants;
 import org.boulderai.bigdata.mini.rpc.common.meta.ServiceMetadata;
 import org.boulderai.bigdata.mini.rpc.common.thread.ThreadPool;
-import org.boulderai.bigdata.mini.rpc.registry.ServiceRegistry;
+import org.boulderai.bigdata.mini.rpc.registry.api.ServiceRegistry;
+
 
 import java.util.ArrayList;
 import java.util.List;

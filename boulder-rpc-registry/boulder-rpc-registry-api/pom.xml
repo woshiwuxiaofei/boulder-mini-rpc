@@ -3,13 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>boulder-mini-rpc</artifactId>
+        <artifactId>boulder-rpc-registry</artifactId>
         <groupId>org.boulderai.bigdata</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>boulder-rpc-client</artifactId>
+    <artifactId>boulder-rpc-registry-api</artifactId>
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
 
     <dependencies>
 
@@ -18,17 +22,7 @@
             <artifactId>boulder-rpc-common</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.boulderai.bigdata</groupId>
-            <artifactId>boulder-rpc-proxy-api</artifactId>
-        </dependency>
 
-        <dependency>
-            <groupId>org.boulderai.bigdata</groupId>
-            <artifactId>boulder-rpc-registry-zookeeper</artifactId>
-        </dependency>
-        
     </dependencies>
-
 
 </project>

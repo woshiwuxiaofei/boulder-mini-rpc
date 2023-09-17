@@ -10,20 +10,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>boulder-rpc-registry</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>boulder-rpc-registry-api</module>
+        <module>boulder-rpc-registry-zookeeper</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
-    <dependencies>
 
-        <dependency>
-            <groupId>org.boulderai.bigdata</groupId>
-            <artifactId>boulder-rpc-common</artifactId>
-        </dependency>
-
-
-    </dependencies>
 
 </project>

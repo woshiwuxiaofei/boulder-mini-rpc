@@ -19,7 +19,7 @@
         </dependency>
         <dependency>
             <groupId>org.boulderai.bigdata</groupId>
-            <artifactId>boulder-rpc-registry</artifactId>
+            <artifactId>boulder-rpc-registry-zookeeper</artifactId>
         </dependency>
 
         <dependency>

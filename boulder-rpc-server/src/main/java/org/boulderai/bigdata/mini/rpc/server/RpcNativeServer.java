@@ -8,6 +8,10 @@ public class RpcNativeServer extends BaseNettyServer {
 
     public RpcNativeServer(String serverAddress, int corePoolSize, int maximumPoolSize, int maxConnections, String unusedStrategyType, String scanPackage) {
         super(serverAddress, corePoolSize, maximumPoolSize, maxConnections, unusedStrategyType);
-        this.serviceBeanMap = RpcServiceScanner.scanWithRpcServiceAnnotation(serverAddress, scanPackage, null);
+        try {
+            this.serviceBeanMap = RpcServiceScanner.scanWithRpcServiceAnnotation(serverAddress, scanPackage, null);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

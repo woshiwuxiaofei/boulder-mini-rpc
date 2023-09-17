@@ -1,7 +1,8 @@
-package org.boulderai.bigdata.mini.rpc.registry;
+package org.boulderai.bigdata.mini.rpc.registry.api;
 
 import com.boulderai.bigdata.mini.rpc.spi.annotation.SPI;
 import org.boulderai.bigdata.mini.rpc.common.meta.ServiceMetadata;
+import org.boulderai.bigdata.mini.rpc.registry.api.config.RegistryConfig;
 
 import java.util.List;
 
@@ -21,6 +22,14 @@ import java.util.List;
  **/
 @SPI
 public interface ServiceRegistry {
+
+    /**
+     * 默认初始化方法
+     */
+    default void init(RegistryConfig registryConfig) throws Exception {
+
+    }
+
     /** 服务注册
      * @param serviceMeta 服务元数据
      * @throws Exception 抛出异常
